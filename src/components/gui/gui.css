@@ -4,6 +4,7 @@
 
 .page-wrapper {
   height: 100%;
+  position: relative;
 }
 
 .body-wrapper {
