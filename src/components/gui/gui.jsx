@@ -290,7 +290,7 @@ const GUIComponent = (props) => {
                           grow={1}
                           isVisible={blocksTabVisible}
                           options={{
-                            media: `${basePath}static/blocks-media/`,
+                            media: `${basePath}/blocks-media/`,
                           }}
                           stageSize={stageSize}
                           vm={vm}
@@ -416,7 +416,7 @@ GUIComponent.propTypes = {
 GUIComponent.defaultProps = {
   backpackHost: null,
   backpackVisible: false,
-  basePath: "assets/scratch/",
+  basePath: "/assets/scratch/",
   canChangeLanguage: true,
   canCreateNew: false,
   canEditTitle: false,
