@@ -15,7 +15,7 @@ var postcssImport = require("postcss-import");
 const STATIC_PATH = process.env.STATIC_PATH || "/assets/scratch";
 
 const base = {
-  mode: process.env.NODE_ENV === "production" ? "production" : "development",
+  mode: "production",
   devtool: "cheap-module-source-map",
   devServer: {
     contentBase: path.resolve(__dirname, "build"),
@@ -103,7 +103,11 @@ if (!process.env.CI) {
 
 module.exports = [
   // to run editor examples
+
   defaultsDeep({}, base, {
+    resolve: {
+      mainFields: ["unpkg", "main", "module"],
+    },
     entry: {
       "lib.min": ["react", "react-dom"],
       gui: "./src/playground/index.jsx",
@@ -121,7 +125,7 @@ module.exports = [
           test: /\.(svg|png|wav|gif|jpg)$/,
           loader: "file-loader",
           options: {
-            outputPath: "static/assets/",
+            outputPath: "static/assets",
           },
         },
       ]),
@@ -216,8 +220,8 @@ module.exports = [
               test: /\.(svg|png|wav|gif|jpg)$/,
               loader: "file-loader",
               options: {
-                outputPath: "static/assets/",
-                publicPath: `${STATIC_PATH}/assets/`,
+                outputPath: "static/assets",
+                publicPath: `${STATIC_PATH}/assets`,
               },
             },
           ]),
