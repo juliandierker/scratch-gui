@@ -416,7 +416,7 @@ GUIComponent.propTypes = {
 GUIComponent.defaultProps = {
   backpackHost: null,
   backpackVisible: false,
-  basePath: "/assets/scratch/",
+  basePath: "/assets/scratch",
   canChangeLanguage: true,
   canCreateNew: false,
   canEditTitle: false,
