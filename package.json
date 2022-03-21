@@ -1,10 +1,10 @@
 {
   "name": "scratch-gui-pearup",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "GraphicaL User Interface for creating and running Scratch 3.0 projects",
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "build": "npm run clean && export NODE_ENV=production && export NODE_OPTIONS='--openssl-legacy-provider' && webpack --colors --bail",
+    "build": "npm run clean && export NODE_ENV=production && webpack --colors --bail",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
     "deploy": "touch build/.nojekyll && gh-pages -t -d build -m \"Build for $(git log --pretty=format:%H -n1) [skip ci]\"",
     "prune": "./prune-gh-pages.sh",
