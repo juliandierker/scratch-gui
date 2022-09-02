@@ -11,7 +11,9 @@ var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 var autoprefixer = require("autoprefixer");
 var postcssVars = require("postcss-simple-vars");
 var postcssImport = require("postcss-import");
-const STATIC_PATH = process.env.STATIC_PATH || "/assets/scratch";
+const STATIC_PATH =
+  process.env.STATIC_PATH ||
+  "https://meteor-assets.s3.eu-central-1.amazonaws.com/scratch";
 console.log("PROD ENV", process.env.NODE_ENV);
 const base = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",

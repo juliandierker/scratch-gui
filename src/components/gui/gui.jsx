@@ -290,7 +290,7 @@ const GUIComponent = (props) => {
                           grow={1}
                           isVisible={blocksTabVisible}
                           options={{
-                            media: `${basePath}/blocks-media/`,
+                            media: `https://meteor-assets.s3.eu-central-1.amazonaws.com/scratch/blocks-media/`,
                           }}
                           stageSize={stageSize}
                           vm={vm}
