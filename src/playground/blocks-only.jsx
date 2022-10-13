@@ -20,7 +20,7 @@ const BlocksOnly = (props) => (
     <VMBlocks
       grow={1}
       options={{
-        media: `https://meteor-assets.s3.eu-central-1.amazonaws.com/scratch/blocks-media/`,
+        media: `https://pearup-project-assets.s3.eu-central-1.amazonaws.com/scratch/blocks-media/`,
       }}
     />
     <VMControls className={styles.controls} />
