@@ -12,6 +12,7 @@ var autoprefixer = require("autoprefixer");
 var postcssVars = require("postcss-simple-vars");
 var postcssImport = require("postcss-import");
 const STATIC_PATH =
+  process.env.STATIC_PATH ||
   "https://pearup-project-assets.s3.eu-central-1.amazonaws.com/scratch";
 const base = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
