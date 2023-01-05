@@ -5,6 +5,6 @@ The UI is adapted to our needs at www.pearup.de
 
 ## Publish
 
-For publish-actions you need to build the entire project new localy with 
+For publish-actions you need to build the entire project new localy with
 
-```BUILD_MODE=dist npm run build```
+`BUILD_MODE=dist npm run build`
