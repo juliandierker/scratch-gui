@@ -8,3 +8,7 @@ The UI is adapted to our needs at www.pearup.de
 For publish-actions you need to build the entire project new localy with
 
 `BUILD_MODE=dist npm run build`
+
+if it fails you can try
+
+`sudo BUILD_MODE=dist NODE_OPTIONS='--openssl-legacy-provider' npm run watch --openssl-legacy-provider`
