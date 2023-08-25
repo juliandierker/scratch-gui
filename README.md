@@ -9,6 +9,8 @@ For publish-actions you need to build the entire project new localy with
 
 `BUILD_MODE=dist npm run build`
 
+Make sure Node is running on V 16 or V 14
+
 if it fails you can try
 
 `sudo BUILD_MODE=dist NODE_OPTIONS='--openssl-legacy-provider' npm run watch --openssl-legacy-provider`
